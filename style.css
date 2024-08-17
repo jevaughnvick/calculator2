@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif, Geneva, Verdana, sans-serif;
+}
+
+#display-cont{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#keypad-cont{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#display{
+    font-family: monospace;
+    border: 1px solid rgb(163, 163, 163);
+    width: 90%;
+    height: 270px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+#display div{
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    justify-content: end;
+}
+
+#upper{
+    font-size: 3em;
+}
+
+#lower{
+    font-size: 4em;
+    align-items: center;
+}
+
+#keypad{
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.key{
+    border: 1px solid rgb(163, 163, 163);
+    flex: 1 1 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: inherit;
+    font-size: inherit;
+    background-color: transparent;
+}
+
+button:not(#clear){
+    font-size: 3em;
+}
+
+.key:active{
+    scale: .9;
+}
