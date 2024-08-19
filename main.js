@@ -27,12 +27,6 @@ buttons.forEach(button => button.addEventListener("click", e => {
 
     if(e.target.classList.contains("op-key")){
 
-        if(e.target.textContent === "÷" && operandOne == 0){
-
-            alert("Hey!")
-            location.reload();
-        }
-
         operationStarted = true;
 
         if(operandTwo){
@@ -69,7 +63,11 @@ buttons.forEach(button => button.addEventListener("click", e => {
         clear();
     }
 
+    if(sign === "÷" && operandTwo === "0"){
 
+        alert("wtf?")
+        location.reload();
+    }
 }));
 
 function registerOperandOne(e){
