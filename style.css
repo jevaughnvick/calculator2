@@ -71,6 +71,14 @@ body{
     background-color: transparent;
 }
 
+.op-key{
+    color: coral;
+}
+
+#equal{
+    color: gray;
+}
+
 button:not(#clear){
     font-size: 3em;
 }
