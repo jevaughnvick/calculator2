@@ -64,7 +64,7 @@ buttons.forEach(button => button.addEventListener("click", e => {
         }
     }
 
-    if(e.target.textContent === "CLEAR"){
+    if(e.target.textContent === "CLR"){
 
         clear();
     }
