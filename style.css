@@ -86,3 +86,10 @@ button:not(#clear){
 .key:active{
     scale: .9;
 }
+
+@media all and (max-width: 500px){
+    body{
+        flex-direction: column;
+        gap: 50px;
+    }
+}
